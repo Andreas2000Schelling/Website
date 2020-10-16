@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!linker til ekstern CSS fil, for overskuelighed>
+    <link rel='stylesheet' href='styles.css'>
+    <title>Assignment 6</title>
+</head>
+<body>
+    <header>
+        <h1>
+           Assignment 6 
+        </h1>
+        <form>
+    <!Vi opretter en form som kan tage højde for bruger Input>
+    <!Laver 2 buttons som skal henholdsvis gemme indtastede navn i local storage eller glemme inputtet>
+            <div class = 'remember'>
+                <label for='inputName'>Input Name</label>
+                <input id ='inputName' type='text' required>
+                <input id ='submitName' type='submit' value ='submit'>
+            </div>    
+            <div class = 'forget'>
+                <label for='forgetName'>Forget Me</label>
+                <input id='forgetName' type='reset' value='forget'>
+            </div>
+        </form>
+    </header>
+    <main>
+        <p class='personalGreeting'>
+            Welcome to our website
+        </p>
+        <img src='logo_large.png'>
+    </main>
+<! Jeg har valgt at indsætte Javascriptet i bunden af vores body-tag, da dens forrige placering i headeren 
+voldte problemer i forhold til mine events. Tror det har noget at gøre med at den loader HTML før den har 
+indlæst javaScriptet. Jeg har godt nok tilføjet 'derfer' i referencen hvilket burde tage hånd om problemet, men det ville 
+kun virker hvis scriptet stod nederst>
+    <script src='Script.js'derfer></script>
+    <footer>
+        This webpage is created by Andreas Schelling
+    </footer>
+</body>
+</html> 
